@@ -746,6 +746,7 @@ class DefaultGenerateTextResult<TOOLS extends ToolSet, OUTPUT>
     this.toolCalls = options.toolCalls;
     this.toolResults = options.toolResults;
     this.finishReason = options.finishReason;
+    console.log(`generateText.usage`, JSON.stringify(options.usage, null, 2));
     this.usage = options.usage;
     this.warnings = options.warnings;
     this.request = options.request;

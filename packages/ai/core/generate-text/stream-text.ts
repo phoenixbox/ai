@@ -808,6 +808,7 @@ class DefaultStreamTextResult<TOOLS extends ToolSet, OUTPUT, PARTIAL_OUTPUT>
           self.sourcesPromise.resolve(recordedSources);
           self.stepsPromise.resolve(recordedSteps);
 
+          console.log(`streamText.usage`, JSON.stringify(usage, null, 2));
           // call onFinish callback:
           await onFinish?.({
             finishReason,
